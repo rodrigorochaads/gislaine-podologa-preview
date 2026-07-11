@@ -57,7 +57,7 @@
   .cta-btn {
     display: inline-flex; align-items: center; gap: 8px;
     background: var(--gold); color: #2A2011;
-    font-size: 14px; font-weight: 600;
+    font-family: inherit; font-size: 14px; font-weight: 600;
     padding: 10px 18px; border-radius: 999px;
     text-decoration: none; white-space: nowrap;
   }
@@ -208,8 +208,8 @@
     <div class="brand">
       <div class="brand-mark serif">GN</div>
       <div class="brand-name">Gislaine Neuberger · Podóloga</div>
-      <a class="brand-ig" href="https://www.instagram.com/podologagislaineuberger/" target="_blank" rel="noopener" data-gtm="link_instagram">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      <a class="brand-ig" href="https://www.instagram.com/podologagislaineuberger/" target="_blank" rel="noopener" data-gtm="link_instagram" aria-label="Instagram @podologagislaineuberger">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
         <span>@podologagislaineuberger</span>
       </a>
     </div>
@@ -231,7 +231,7 @@
       </div>
     </div>
     <div class="frame">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
       <p class="frame-label">Foto real da Gislaine em ambiente clínico entra aqui<br><span style="opacity:.7">(item 1 do checklist de imagens)</span></p>
     </div>
   </section>
@@ -244,17 +244,17 @@
     </div>
     <div class="diff-grid">
       <div class="diff-card">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white"><path d="M12 2a5 5 0 015 5c0 3-2 4-2 7v3a3 3 0 01-6 0v-3c0-3-2-4-2-7a5 5 0 015-5z"/><path d="M9 20h6"/></svg></div>
+        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white" aria-hidden="true"><path d="M12 2a5 5 0 015 5c0 3-2 4-2 7v3a3 3 0 01-6 0v-3c0-3-2-4-2-7a5 5 0 015-5z"/><path d="M9 20h6"/></svg></div>
         <h3>Anestesia aplicada por médico</h3>
         <p>Você não sente o momento crítico do procedimento — o conforto começa antes da dor aparecer.</p>
       </div>
       <div class="diff-card">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg></div>
+        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg></div>
         <h3>Ambiente de clínica médica</h3>
         <p>Atendimento em consultório, com protocolo de biossegurança e instrumentais esterilizados a cada paciente.</p>
       </div>
       <div class="diff-card">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
+        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
         <h3>Nota 5,0 no Google</h3>
         <p>60 avaliações, todas 5 estrelas — confiança construída atendimento após atendimento.</p>
       </div>
@@ -343,18 +343,18 @@
     <h2 class="serif">Agende sua avaliação em Itapema</h2>
     <div class="form-card">
       <div>
-        <label>Nome</label>
-        <input type="text" placeholder="Seu nome">
+        <label for="lpName">Nome</label>
+        <input type="text" id="lpName" name="nome" autocomplete="name" placeholder="Seu nome">
       </div>
       <div>
-        <label>WhatsApp</label>
-        <input type="text" placeholder="(47) 9....">
+        <label for="lpWhats">WhatsApp</label>
+        <input type="tel" id="lpWhats" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(47) 9....">
       </div>
       <div>
-        <label>O que está sentindo?</label>
-        <input type="text" placeholder="Ex.: unha encravada no dedão">
+        <label for="lpPain">O que está sentindo?</label>
+        <input type="text" id="lpPain" name="sintoma" placeholder="Ex.: unha encravada no dedão">
       </div>
-      <a class="cta-btn" href="https://wa.me/5547992476150?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20unha%20encravada." target="_blank" rel="noopener" data-gtm="cta_form_submit" style="justify-content:center; margin-top:6px;">Quero agendar</a>
+      <button type="button" class="cta-btn" id="formSubmitBtn" data-gtm="cta_form_submit" style="justify-content:center; margin-top:6px; border:none; cursor:pointer;">Quero agendar</button>
     </div>
   </section>
 
@@ -365,18 +365,34 @@
 
 </div>
 
-<a class="fab-wa" id="fabWa" href="https://wa.me/5547992476150?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20unha%20encravada." target="_blank" rel="noopener" data-gtm="cta_sticky_whatsapp">
-  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.1-1.34A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.2-1.77 1.24-.45.05-1.02.07-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74s.68-1.94.93-2.2c.24-.27.53-.33.7-.33h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.47-.09.18-.14.29-.27.44-.14.16-.29.35-.41.47-.14.13-.28.28-.12.55.16.27.71 1.17 1.53 1.9 1.05.94 1.93 1.23 2.2 1.37.27.14.43.11.59-.07.16-.18.68-.79.87-1.06.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.88.27.13.45.2.51.31.07.13.07.71-.15 1.33z"/></svg>
+<a class="fab-wa" id="fabWa" href="https://wa.me/5547992476150?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20unha%20encravada." target="_blank" rel="noopener" data-gtm="cta_sticky_whatsapp" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.1-1.34A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.2-1.77 1.24-.45.05-1.02.07-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74s.68-1.94.93-2.2c.24-.27.53-.33.7-.33h.5c.16 0 .38-.02.58.45.22.53.75 1.82.82 1.95.07.13.11.29.02.47-.09.18-.14.29-.27.44-.14.16-.29.35-.41.47-.14.13-.28.28-.12.55.16.27.71 1.17 1.53 1.9 1.05.94 1.93 1.23 2.2 1.37.27.14.43.11.59-.07.16-.18.68-.79.87-1.06.18-.27.36-.22.6-.13.25.09 1.57.74 1.84.88.27.13.45.2.51.31.07.13.07.71-.15 1.33z"/></svg>
   <span>WhatsApp · Agendar</span>
 </a>
 
 <script>
   (function () {
     var fab = document.getElementById('fabWa');
-    if (!fab) return;
-    window.addEventListener('scroll', function () {
-      fab.classList.toggle('on', window.scrollY > 400);
-    });
+    if (fab) {
+      window.addEventListener('scroll', function () {
+        fab.classList.toggle('on', window.scrollY > 400);
+      });
+    }
+
+    var WA_NUMBER = '5547992476150';
+    var btn = document.getElementById('formSubmitBtn');
+    if (btn) {
+      btn.addEventListener('click', function () {
+        var nome = (document.getElementById('lpName').value || '').trim();
+        var sintoma = (document.getElementById('lpPain').value || '').trim();
+        var msg = 'Olá! ';
+        msg += nome ? 'Meu nome é ' + nome + '. ' : '';
+        msg += 'Vim pelo Google e gostaria de agendar uma avaliação';
+        msg += sintoma ? ' para ' + sintoma + '.' : ' para unha encravada.';
+        var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+        window.open(url, '_blank', 'noopener');
+      });
+    }
   })();
 </script>
 </body>
