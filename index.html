@@ -4,64 +4,71 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Podóloga em Itapema | Unha Encravada com Anestesia — Gislaine Neuberger</title>
-<meta name="description" content="Podóloga em Itapema, SC. Tratamento de unha encravada com anestesia aplicada por médico, em ambiente de clínica médica. Nota 5,0 no Google. Agende pelo WhatsApp.">
+<meta name="description" content="Podóloga em Meia Praia, Itapema, SC. Avaliação gratuita, tratamento de unha encravada com anestesia aplicada por médico. Nota 5,0 no Google. Agende pelo WhatsApp.">
 <meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --sage: #69755D;
     --sage-deep: #4E5846;
     --sage-light: #BCBCA5;
     --gray: #B8B8B8;
-    --gold: #B09261;
-    --gold-deep: #8A6E45;
-    --paper: #F8F5ED;
+    --greige: #DADDD7;
     --paper-raised: #FFFFFF;
-    --ink: #23271D;
-    --ink-soft: #565A4C;
-    --border: #DEDACB;
+    --ink: #000000;
+    --ink-soft: #4E5846;
+    --border: #C7CCC0;
+    --font-display: 'Poppins', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-body: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   }
   * { box-sizing: border-box; }
-  body { background: var(--paper); margin: 0; }
+  body { background: var(--greige); margin: 0; }
   a { color: inherit; }
   .page {
-    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-family: var(--font-body);
     color: var(--ink);
-    background: var(--paper);
+    background: var(--greige);
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
   }
-  .serif { font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-weight: 400; }
+  .display { font-family: var(--font-display); font-weight: 500; }
 
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
     padding: 1.1rem clamp(1rem, 4vw, 2.5rem);
   }
-  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
   .brand-mark {
     width: 34px; height: 34px; border-radius: 50%;
     background: var(--sage);
-    color: var(--gold);
+    color: #FFFFFF;
+    font-family: var(--font-display);
     display: flex; align-items: center; justify-content: center;
     font-size: 14px; font-weight: 600; letter-spacing: 0.02em;
   }
-  .brand-name { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .brand-name { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
   .brand-ig {
     font-size: 12px; color: var(--ink-soft); text-decoration: none;
     display: inline-flex; align-items: center; gap: 4px; margin-left: 4px;
+    padding: 10px 6px; margin: -10px -6px -10px 4px; border-radius: 8px;
   }
-  .brand-ig svg { width: 14px; height: 14px; stroke: var(--ink-soft); flex-shrink: 0; }
+  .brand-ig svg { width: 16px; height: 16px; stroke: var(--ink-soft); flex-shrink: 0; }
   @media (max-width: 560px) { .brand-ig span { display: none; } }
   .cta-btn {
     display: inline-flex; align-items: center; gap: 8px;
-    background: var(--gold); color: #2A2011;
-    font-family: inherit; font-size: 14px; font-weight: 600;
-    padding: 10px 18px; border-radius: 999px;
+    background: var(--sage); color: #FFFFFF;
+    font-family: var(--font-display); font-size: 14px; font-weight: 600;
+    padding: 12px 20px; border-radius: 999px;
     text-decoration: none; white-space: nowrap;
+    min-height: 44px;
   }
-  .cta-btn.ghost { background: transparent; border: 1px solid var(--gold-deep); color: var(--gold-deep); }
+  .cta-btn.ghost { background: transparent; border: 1.5px solid var(--sage); color: var(--sage-deep); padding: 10.5px 20px; }
 
   .hero {
     display: grid;
@@ -72,12 +79,13 @@
   }
   @media (max-width: 760px) { .hero { grid-template-columns: 1fr; padding-top: 0.5rem; } }
   .eyebrow {
-    font-size: 12.5px; letter-spacing: 0.09em; text-transform: uppercase;
-    color: var(--gold-deep); font-weight: 700; margin: 0 0 0.7rem;
+    font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--sage-deep); font-weight: 700; margin: 0 0 0.7rem;
   }
   h1 {
-    font-size: clamp(30px, 4.4vw, 46px);
-    line-height: 1.12;
+    font-family: var(--font-display); font-weight: 600;
+    font-size: clamp(28px, 4.2vw, 42px);
+    line-height: 1.16;
     margin: 0 0 1rem;
     text-wrap: balance;
     color: var(--ink);
@@ -88,10 +96,15 @@
     max-width: 46ch; margin: 0 0 1.6rem;
   }
   .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 1.6rem; }
-  .trust-row { display: flex; align-items: center; gap: 10px; }
-  .stars { color: var(--gold); font-size: 16px; letter-spacing: 1px; }
+  .trust-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--sage); font-size: 16px; letter-spacing: 1px; }
   .trust-text { font-size: 13.5px; color: var(--ink-soft); }
   .trust-text strong { color: var(--ink); }
+  .badge-free {
+    display: inline-block; font-size: 12px; font-weight: 700;
+    color: var(--sage-deep); background: var(--paper-raised);
+    border: 1px solid var(--sage-light); border-radius: 999px; padding: 4px 12px;
+  }
 
   .frame {
     aspect-ratio: 4/5; border-radius: 16px; border: 1.5px dashed var(--gray);
@@ -99,35 +112,35 @@
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
     position: relative;
   }
-  .frame svg { width: 30px; height: 30px; stroke: var(--sage-deep); opacity: 0.65; }
+  .frame svg { width: 30px; height: 30px; stroke: var(--sage-deep); opacity: 0.7; }
   .frame-label { font-size: 12px; color: var(--sage-deep); text-align: center; padding: 0 1.2rem; line-height: 1.5; }
-  .frame.wide { aspect-ratio: 16/9; }
 
   section { padding: 3rem clamp(1rem, 4vw, 2.5rem); }
   .section-head { max-width: 60ch; margin: 0 0 2rem; }
-  h2 { font-size: clamp(22px, 3vw, 28px); margin: 0 0 0.6rem; text-wrap: balance; }
+  h2 { font-family: var(--font-display); font-weight: 600; font-size: clamp(21px, 2.8vw, 27px); margin: 0 0 0.6rem; text-wrap: balance; }
   .section-sub { color: var(--ink-soft); font-size: 15px; line-height: 1.6; margin: 0; }
 
   .diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   @media (max-width: 760px) { .diff-grid { grid-template-columns: 1fr; } }
   .diff-card {
-    background: var(--paper-raised); border: 0.5px solid var(--border); border-radius: 14px;
+    background: var(--paper-raised); border: 1px solid var(--border); border-radius: 14px;
     padding: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem;
   }
   .diff-icon {
     width: 40px; height: 40px; border-radius: 10px; background: var(--sage);
     display: flex; align-items: center; justify-content: center;
   }
-  .diff-icon svg { width: 20px; height: 20px; stroke: var(--paper); }
-  .diff-card h3 { font-size: 16px; margin: 0; font-family: Georgia, serif; font-weight: 400; }
+  .diff-icon svg { width: 20px; height: 20px; stroke: #FFFFFF; }
+  .diff-card h3 { font-family: var(--font-display); font-size: 16px; margin: 0; font-weight: 600; }
   .diff-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.55; margin: 0; }
 
   .chips { display: flex; flex-wrap: wrap; gap: 10px; }
   .chip {
-    background: var(--paper-raised); border: 0.5px solid var(--border);
+    background: var(--paper-raised); border: 1px solid var(--border);
     padding: 9px 16px; border-radius: 999px; font-size: 14px;
   }
-  .chip.featured { background: var(--sage); color: var(--paper); border-color: var(--sage); font-weight: 600; }
+  .chip.featured { background: var(--sage); color: #FFFFFF; border-color: var(--sage); font-weight: 600; }
+  .mico-note { font-size: 13.5px; color: var(--ink-soft); margin: 0.9rem 0 0; }
 
   .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; counter-reset: step; }
   @media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
@@ -136,59 +149,60 @@
     counter-increment: step; content: counter(step);
     position: absolute; left: 0; top: 0;
     width: 32px; height: 32px; border-radius: 50%;
-    background: var(--gold-tint, #EFE1C8); color: var(--gold-deep);
+    background: var(--paper-raised); color: var(--sage-deep);
     display: flex; align-items: center; justify-content: center;
-    font-size: 14px; font-weight: 700; font-family: Georgia, serif;
-    border: 1px solid var(--gold);
+    font-size: 14px; font-weight: 700; font-family: var(--font-display);
+    border: 1.5px solid var(--sage);
   }
-  .step h3 { font-size: 15.5px; margin: 0 0 0.4rem; font-family: Georgia, serif; font-weight: 400; }
+  .step h3 { font-family: var(--font-display); font-size: 15.5px; margin: 0 0 0.4rem; font-weight: 600; }
   .step p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; margin: 0; }
 
   .social-proof {
-    background: var(--sage); color: var(--paper); border-radius: 20px;
+    background: var(--sage); color: #FFFFFF; border-radius: 20px;
     margin: 0 clamp(1rem, 4vw, 2.5rem);
     padding: 2.5rem clamp(1.25rem, 4vw, 3rem);
     display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; align-items: center;
   }
   @media (max-width: 760px) { .social-proof { grid-template-columns: 1fr; text-align: center; } }
   .score-block { text-align: center; }
-  .score-num { font-size: 52px; font-family: Georgia, serif; line-height: 1; }
-  .score-stars { color: var(--gold); font-size: 18px; margin: 6px 0; letter-spacing: 2px; }
+  .score-num { font-family: var(--font-display); font-weight: 700; font-size: 52px; line-height: 1; }
+  .score-stars { color: #FFFFFF; font-size: 18px; margin: 6px 0; letter-spacing: 2px; }
   .score-label { font-size: 13px; color: var(--sage-light); }
   .quote-list { display: flex; flex-direction: column; gap: 1.1rem; }
-  .quote { font-size: 15px; line-height: 1.6; font-family: Georgia, serif; }
-  .quote::before { content: "\201C"; color: var(--gold); }
-  .quote::after { content: "\201D"; color: var(--gold); }
+  .quote { font-size: 15px; line-height: 1.6; }
+  .quote::before { content: "\201C"; }
+  .quote::after { content: "\201D"; }
   .quote-src { font-size: 12.5px; color: var(--sage-light); margin-top: 4px; }
 
-  .faq-item { border-bottom: 0.5px solid var(--border); padding: 1.1rem 0; }
-  .faq-q { font-size: 15.5px; font-weight: 600; margin: 0 0 0.4rem; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 1.1rem 0; }
+  .faq-q { font-family: var(--font-display); font-size: 15.5px; font-weight: 600; margin: 0 0 0.4rem; }
   .faq-a { font-size: 14px; color: var(--ink-soft); line-height: 1.6; margin: 0; }
-  .faq-item.pending { background: #FBF1E0; border: 1px dashed var(--gold); border-bottom: 1px dashed var(--gold); border-radius: 10px; padding: 1rem 1.1rem; margin-top: 0.6rem; }
-  .faq-pending-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--gold-deep); background: var(--paper-raised); border: 1px solid var(--gold); border-radius: 999px; padding: 2px 10px; margin-bottom: 0.5rem; }
+  .faq-item.pending { background: var(--paper-raised); border: 1.5px dashed var(--sage); border-radius: 10px; padding: 1rem 1.1rem; margin-top: 0.6rem; }
+  .faq-pending-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--sage-deep); background: var(--greige); border: 1px solid var(--sage-light); border-radius: 999px; padding: 3px 10px; margin-bottom: 0.5rem; }
 
   .final-cta { text-align: center; padding: 3.5rem clamp(1rem, 4vw, 2.5rem) 2rem; }
   .final-cta h2 { max-width: 32ch; margin: 0 auto 1rem; }
   .form-card {
     max-width: 380px; margin: 1.5rem auto 0;
-    background: var(--paper-raised); border: 0.5px solid var(--border); border-radius: 16px;
-    padding: 1.5rem; box-shadow: 0 8px 24px rgba(34,39,29,0.06);
+    background: var(--paper-raised); border: 1px solid var(--border); border-radius: 16px;
+    padding: 1.5rem; box-shadow: 0 8px 24px rgba(0,0,0,0.06);
     display: flex; flex-direction: column; gap: 10px; text-align: left;
   }
-  .form-card input { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+  .form-card input { border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 14px; font-family: var(--font-body); min-height: 44px; }
   .form-card label { font-size: 12px; color: var(--ink-soft); }
 
-  footer { padding: 2rem clamp(1rem, 4vw, 2.5rem) 3rem; font-size: 12px; color: var(--ink-soft); line-height: 1.7; border-top: 0.5px solid var(--border); margin-top: 1rem; }
+  footer { padding: 2rem clamp(1rem, 4vw, 2.5rem) 3rem; font-size: 12px; color: var(--ink-soft); line-height: 1.7; border-top: 1px solid var(--border); margin-top: 1rem; }
 
   .fab-wa {
     position: fixed; right: 18px; bottom: 18px; z-index: 20;
     display: flex; align-items: center; gap: 8px;
     background: #25D366; color: #0B3B1E;
     padding: 13px 18px; border-radius: 999px;
-    text-decoration: none; font-size: 14px; font-weight: 700;
+    text-decoration: none; font-family: var(--font-display); font-size: 14px; font-weight: 700;
     box-shadow: 0 6px 18px rgba(11,59,30,0.28);
     opacity: 0; transform: translateY(12px); pointer-events: none;
     transition: opacity .25s ease, transform .25s ease;
+    min-height: 44px;
   }
   .fab-wa.on { opacity: 1; transform: translateY(0); pointer-events: auto; }
   .fab-wa svg { width: 20px; height: 20px; fill: #0B3B1E; }
@@ -202,13 +216,16 @@
   Todo botão de conversão já tem data-gtm="..." marcado (cta_header_whatsapp, cta_hero_whatsapp,
   cta_form_submit, cta_sticky_whatsapp). Assim que o container do GTM existir, mapear esses 4
   atributos como eventos de conversão via Trigger de clique (Click Element matches CSS selector).
+
+  DIREÇÃO VISUAL 13/07/2026: cores e tipografia realinhadas ao site real da cliente
+  (podologagislaineuberger.com.br) após feedback dela — sage + greige + Poppins, sem dourado.
 -->
 
 <div class="page">
 
   <header>
     <div class="brand">
-      <div class="brand-mark serif">GN</div>
+      <div class="brand-mark display">GN</div>
       <div class="brand-name">Gislaine Neuberger · Podóloga</div>
       <a class="brand-ig" href="https://www.instagram.com/podologagislaineuberger/" target="_blank" rel="noopener" data-gtm="link_instagram" aria-label="Instagram @podologagislaineuberger">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
@@ -218,152 +235,156 @@
     <a class="cta-btn" href="https://wa.me/5547992476150?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20unha%20encravada." target="_blank" rel="noopener" data-gtm="cta_header_whatsapp">Agendar no WhatsApp</a>
   </header>
 
-  <section class="hero" style="padding-top: 1.5rem;">
-    <div>
-      <p class="eyebrow">Podologia clínica · Itapema, SC</p>
-      <h1 class="serif">Unha encravada tratada com <em>anestesia aplicada por médico</em> — sem dor, sem cirurgia caseira</h1>
-      <p class="hero-sub">Alívio em consulta única, em ambiente de clínica médica, com o padrão de cuidado e segurança que esse tipo de procedimento merece.</p>
-      <div class="hero-ctas">
-        <a class="cta-btn" href="https://wa.me/5547992476150?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20unha%20encravada." target="_blank" rel="noopener" data-gtm="cta_hero_whatsapp">Agendar avaliação agora</a>
-        <a class="cta-btn ghost" href="#tratamos">Ver o que tratamos</a>
-      </div>
-      <div class="trust-row">
-        <span class="stars">★★★★★</span>
-        <span class="trust-text"><strong>Nota 5,0</strong> · 60 avaliações no Google</span>
-      </div>
-    </div>
-    <div class="frame">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
-      <p class="frame-label">Foto real da Gislaine em ambiente clínico entra aqui<br><span style="opacity:.7">(item 1 do checklist de imagens)</span></p>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head">
-      <p class="eyebrow">O que você recebe aqui</p>
-      <h2 class="serif">Anestesia aplicada por médico, para um procedimento sem dor</h2>
-      <p class="section-sub">Da avaliação ao alívio, tudo acontece com o padrão de cuidado de uma clínica médica.</p>
-    </div>
-    <div class="diff-grid">
-      <div class="diff-card">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white" aria-hidden="true"><path d="M12 2a5 5 0 015 5c0 3-2 4-2 7v3a3 3 0 01-6 0v-3c0-3-2-4-2-7a5 5 0 015-5z"/><path d="M9 20h6"/></svg></div>
-        <h3>Anestesia aplicada por médico</h3>
-        <p>Você não sente o momento crítico do procedimento — o conforto começa antes da dor aparecer.</p>
-      </div>
-      <div class="diff-card">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg></div>
-        <h3>Ambiente de clínica médica</h3>
-        <p>Atendimento em consultório, com protocolo de biossegurança e instrumentais esterilizados a cada paciente.</p>
-      </div>
-      <div class="diff-card">
-        <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke="white" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
-        <h3>Nota 5,0 no Google</h3>
-        <p>60 avaliações, todas 5 estrelas — confiança construída atendimento após atendimento.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="tratamos">
-    <div class="section-head">
-      <p class="eyebrow">Especialidades</p>
-      <h2 class="serif">O que tratamos</h2>
-    </div>
-    <div class="chips">
-      <span class="chip featured">Unha encravada</span>
-      <span class="chip">Micose de unha</span>
-      <span class="chip">Calos</span>
-      <span class="chip">Rachaduras nos calcanhares</span>
-      <span class="chip">Verrugas plantares (HPV)</span>
-      <span class="chip">Onicogrifose</span>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head">
-      <p class="eyebrow">O medo é maior que o procedimento</p>
-      <h2 class="serif">Como funciona a consulta</h2>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <h3>Avaliação</h3>
-        <p>Você chega, conta o que está sentindo e a Gislaine avalia o grau do encravamento na hora.</p>
-      </div>
-      <div class="step">
-        <h3>Procedimento com anestesia</h3>
-        <p>Anestesia aplicada por médico. Você não sente o momento crítico do procedimento.</p>
-      </div>
-      <div class="step">
-        <h3>Alívio imediato</h3>
-        <p>Sai andando sem dor. Sem repouso forçado, sem cirurgia, sem drama.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="social-proof">
-    <div class="score-block">
-      <div class="score-num serif">5,0</div>
-      <div class="score-stars">★★★★★</div>
-      <div class="score-label">60 avaliações no Google</div>
-    </div>
-    <div class="quote-list">
+  <main>
+    <section class="hero" style="padding-top: 1.5rem;">
       <div>
-        <p class="quote">Todos os procedimentos são feitos com anestesia, sem dor e com muito capricho. Extremamente cautelosa e cuidadosa no que faz.</p>
-        <p class="quote-src">— Evilla, avaliação real no Google</p>
+        <p class="eyebrow">Podologia clínica · Meia Praia, Itapema</p>
+        <h1>Unha encravada tratada com <em>anestesia aplicada por médico</em> — sem dor, sem cirurgia caseira</h1>
+        <p class="hero-sub">Avaliação gratuita, em ambiente de clínica médica, com o cuidado que esse procedimento merece.</p>
+        <div class="hero-ctas">
+          <a class="cta-btn" href="https://wa.me/5547992476150?text=Ol%C3%A1!%20Vim%20pelo%20Google%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20unha%20encravada." target="_blank" rel="noopener" data-gtm="cta_hero_whatsapp">Agendar avaliação gratuita</a>
+          <a class="cta-btn ghost" href="#tratamos">Ver o que tratamos</a>
+        </div>
+        <div class="trust-row">
+          <span class="stars">★★★★★</span>
+          <span class="trust-text"><strong>Nota 5,0</strong> · 60 avaliações no Google</span>
+          <span class="badge-free">Avaliação gratuita</span>
+        </div>
       </div>
-      <div>
-        <p class="quote">Vim de outro estado com a unha encravada, inflamada, muito dolorida. Ela fez o procedimento e me acompanhou até a cicatrização.</p>
-        <p class="quote-src">— Thiely, avaliação real no Google</p>
+      <div class="frame">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+        <p class="frame-label">Foto real da Gislaine em ambiente clínico entra aqui<br><span style="opacity:.7">(item 1 do checklist de imagens)</span></p>
       </div>
-      <div>
-        <p class="quote">Realizou o procedimento em meu pé e do meu esposo, com maestria!</p>
-        <p class="quote-src">— avaliação real no Google</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="section-head">
-      <p class="eyebrow">Dúvidas comuns</p>
-      <h2 class="serif">Antes de agendar</h2>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">Dói o procedimento?</p>
-      <p class="faq-a">O maior medo geralmente é do que se imagina, não do que acontece. Com anestesia aplicada por médico, o desconforto é mínimo.</p>
-    </div>
-    <div class="faq-item pending">
-      <span class="faq-pending-tag">Precisamos da sua resposta</span>
-      <p class="faq-q">Consigo voltar a trabalhar no mesmo dia?</p>
-      <p class="faq-a">Gislaine, qual o tempo real de recuperação que você costuma indicar? Assim que você confirmar, a gente preenche essa resposta com precisão.</p>
-    </div>
-    <div class="faq-item pending">
-      <span class="faq-pending-tag">Precisamos da sua resposta</span>
-      <p class="faq-q">É seguro para quem tem diabetes?</p>
-      <p class="faq-a">Gislaine, qual o protocolo específico que você segue com pacientes diabéticas? Vamos preencher com a sua orientação, sem generalizar.</p>
-    </div>
-  </section>
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">O que você recebe aqui</p>
+        <h2>Da avaliação ao alívio, com o cuidado de uma clínica médica</h2>
+        <p class="section-sub">Atendimento humanizado, protocolos individualizados, desde 2020.</p>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-card">
+          <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M12 2a5 5 0 015 5c0 3-2 4-2 7v3a3 3 0 01-6 0v-3c0-3-2-4-2-7a5 5 0 015-5z"/><path d="M9 20h6"/></svg></div>
+          <h3>Anestesia aplicada por médico</h3>
+          <p>Você não sente o momento crítico do procedimento — o conforto começa antes da dor aparecer.</p>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg></div>
+          <h3>Ambiente de clínica médica</h3>
+          <p>Atendimento em consultório, com protocolo de biossegurança e instrumentais esterilizados a cada paciente.</p>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
+          <h3>Nota 5,0 no Google</h3>
+          <p>60 avaliações, todas 5 estrelas — confiança construída atendimento após atendimento.</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="final-cta">
-    <p class="eyebrow">Chega de adiar</p>
-    <h2 class="serif">Agende sua avaliação em Itapema</h2>
-    <div class="form-card">
-      <div>
-        <label for="lpName">Nome</label>
-        <input type="text" id="lpName" name="nome" autocomplete="name" placeholder="Seu nome">
+    <section id="tratamos">
+      <div class="section-head">
+        <p class="eyebrow">Especialidades</p>
+        <h2>O que tratamos</h2>
       </div>
-      <div>
-        <label for="lpWhats">WhatsApp</label>
-        <input type="tel" id="lpWhats" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(47) 9....">
+      <div class="chips">
+        <span class="chip featured">Unha encravada</span>
+        <span class="chip">Micose de unha</span>
+        <span class="chip">Calos</span>
+        <span class="chip">Rachaduras nos calcanhares</span>
+        <span class="chip">Verrugas plantares (HPV)</span>
+        <span class="chip">Onicogrifose</span>
       </div>
-      <div>
-        <label for="lpPain">O que está sentindo?</label>
-        <input type="text" id="lpPain" name="sintoma" placeholder="Ex.: unha encravada no dedão">
+      <p class="mico-note">Exame micológico coletado na própria clínica, para um resultado eficaz e sem reincidência.</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">O medo é maior que o procedimento</p>
+        <h2>Como funciona a consulta</h2>
       </div>
-      <button type="button" class="cta-btn" id="formSubmitBtn" data-gtm="cta_form_submit" style="justify-content:center; margin-top:6px; border:none; cursor:pointer;">Quero agendar</button>
-    </div>
-  </section>
+      <div class="steps">
+        <div class="step">
+          <h3>Avaliação gratuita</h3>
+          <p>Você chega, conta o que está sentindo e a Gislaine avalia o grau do encravamento na hora.</p>
+        </div>
+        <div class="step">
+          <h3>Procedimento com anestesia</h3>
+          <p>Você não sente o momento crítico — o conforto vem antes da dor.</p>
+        </div>
+        <div class="step">
+          <h3>Alívio imediato</h3>
+          <p>Sai andando sem dor. Sem repouso forçado, sem cirurgia, sem drama.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-proof">
+      <div class="score-block">
+        <div class="score-num">5,0</div>
+        <div class="score-stars">★★★★★</div>
+        <div class="score-label">60 avaliações no Google</div>
+      </div>
+      <div class="quote-list">
+        <div>
+          <p class="quote">Todos os procedimentos são feitos com anestesia, sem dor e com muito capricho. Extremamente cautelosa e cuidadosa no que faz.</p>
+          <p class="quote-src">— Evilla, avaliação real no Google</p>
+        </div>
+        <div>
+          <p class="quote">Vim de outro estado com a unha encravada, inflamada, muito dolorida. Ela fez o procedimento e me acompanhou até a cicatrização.</p>
+          <p class="quote-src">— Thiely, avaliação real no Google</p>
+        </div>
+        <div>
+          <p class="quote">Realizou o procedimento em meu pé e do meu esposo, com maestria!</p>
+          <p class="quote-src">— avaliação real no Google</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas comuns</p>
+        <h2>Antes de agendar</h2>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Dói o procedimento?</p>
+        <p class="faq-a">O maior medo geralmente é do que se imagina, não do que acontece. A anestesia cuida disso por você.</p>
+      </div>
+      <div class="faq-item pending">
+        <span class="faq-pending-tag">Precisamos da sua resposta</span>
+        <p class="faq-q">Consigo voltar a trabalhar no mesmo dia?</p>
+        <p class="faq-a">Gislaine, qual o tempo real de recuperação que você costuma indicar? Assim que você confirmar, a gente preenche essa resposta com precisão.</p>
+      </div>
+      <div class="faq-item pending">
+        <span class="faq-pending-tag">Precisamos da sua resposta</span>
+        <p class="faq-q">É seguro para quem tem diabetes?</p>
+        <p class="faq-a">Gislaine, qual o protocolo específico que você segue com pacientes diabéticas? Vamos preencher com a sua orientação, sem generalizar.</p>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <p class="eyebrow">Chega de adiar</p>
+      <h2>Agende sua avaliação gratuita em Itapema</h2>
+      <div class="form-card">
+        <div>
+          <label for="lpName">Nome</label>
+          <input type="text" id="lpName" name="nome" autocomplete="name" placeholder="Seu nome">
+        </div>
+        <div>
+          <label for="lpWhats">WhatsApp</label>
+          <input type="tel" id="lpWhats" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(47) 9....">
+        </div>
+        <div>
+          <label for="lpPain">O que está sentindo?</label>
+          <input type="text" id="lpPain" name="sintoma" placeholder="Ex.: unha encravada no dedão">
+        </div>
+        <button type="button" class="cta-btn" id="formSubmitBtn" data-gtm="cta_form_submit" style="justify-content:center; margin-top:6px; border:none; cursor:pointer;">Quero agendar</button>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p><strong>Gislaine Neuberger — Podóloga.</strong> Rua 202, esquina com Av. Nereu Ramos, 35, Itapema - SC · <a href="https://www.instagram.com/podologagislaineuberger/" target="_blank" rel="noopener" data-gtm="link_instagram_footer">Instagram @podologagislaineuberger</a></p>
+    <p><strong>Gislaine Neuberger — Podóloga.</strong> Meia Praia, Itapema - SC (Rua 202, esquina com Av. Nereu Ramos, 35) · <a href="https://www.instagram.com/podologagislaineuberger/" target="_blank" rel="noopener" data-gtm="link_instagram_footer">Instagram @podologagislaineuberger</a></p>
     <p>Atendimento de podologia. Procedimentos que envolvem anestesia são realizados por médico(a) responsável em ambiente de clínica médica. Resultados podem variar de acordo com cada paciente e o grau de cada caso.</p>
   </footer>
 
