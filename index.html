@@ -23,6 +23,7 @@
     --gold: #B09261;
     --gold-tint: #F1E4CE;
     --gold-deep: #5A431F;
+    --black: #000000;
     --font-display: 'Poppins', -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
     --font-body: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   }
@@ -39,6 +40,22 @@
   }
   .display { font-family: var(--font-display); font-weight: 500; }
 
+  .dark-zone { background: var(--black); color: #FFFFFF; }
+  .dark-zone .brand-name, .dark-zone .brand-ig, .dark-zone .brand-ig svg { color: var(--sage-light); stroke: var(--sage-light); }
+  .dark-zone .eyebrow { color: var(--gold); }
+  .dark-zone h1 { color: #FFFFFF; }
+  .dark-zone h1 em { color: var(--gold); }
+  .dark-zone .hero-sub { color: var(--sage-light); }
+  .dark-zone .stars { color: var(--gold); }
+  .dark-zone .trust-text { color: var(--sage-light); }
+  .dark-zone .trust-text strong { color: #FFFFFF; }
+  .dark-zone .cta-btn:not(.ghost) { background: var(--gold); color: #000000; }
+  .dark-zone .cta-btn.ghost { border-color: var(--gold); color: var(--gold); }
+  .dark-zone .frame { background: #161613; border-color: var(--gold); }
+  .dark-zone .frame svg { stroke: var(--gold); opacity: 0.85; }
+  .dark-zone .frame-label { color: var(--sage-light); }
+  section.hero.dark-zone { border-radius: 0 0 28px 28px; }
+
   header {
     display: flex;
     align-items: center;
@@ -49,8 +66,8 @@
   .brand { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
   .brand-mark {
     width: 34px; height: 34px; border-radius: 50%;
-    background: var(--sage);
-    color: #FFFFFF;
+    background: var(--black);
+    color: var(--gold);
     border: 2px solid var(--gold);
     font-family: var(--font-display);
     display: flex; align-items: center; justify-content: center;
@@ -227,7 +244,7 @@
 
 <div class="page">
 
-  <header>
+  <header class="dark-zone">
     <div class="brand">
       <div class="brand-mark display">GN</div>
       <div class="brand-name">Gislaine Neuberger · Podóloga</div>
@@ -240,7 +257,7 @@
   </header>
 
   <main>
-    <section class="hero" style="padding-top: 1.5rem;">
+    <section class="hero dark-zone" style="padding-top: 1.5rem;">
       <div>
         <p class="eyebrow">Podologia clínica · Meia Praia, Itapema</p>
         <h1>Unha encravada tratada com <em>anestesia aplicada por médico</em> — sem dor, sem cirurgia caseira</h1>
