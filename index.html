@@ -64,15 +64,7 @@
     padding: 1.1rem clamp(1rem, 4vw, 2.5rem);
   }
   .brand { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .brand-mark {
-    width: 34px; height: 34px; border-radius: 50%;
-    background: var(--black);
-    color: var(--gold);
-    border: 2px solid var(--gold);
-    font-family: var(--font-display);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 14px; font-weight: 600; letter-spacing: 0.02em;
-  }
+  .brand-logo-img { height: 42px; width: auto; display: block; }
   .brand-name { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
   .brand-ig {
     font-size: 12px; color: var(--ink-soft); text-decoration: none;
@@ -246,8 +238,7 @@
 
   <header class="dark-zone">
     <div class="brand">
-      <div class="brand-mark display">GN</div>
-      <div class="brand-name">Gislaine Neuberger · Podóloga</div>
+      <img class="brand-logo-img" src="logo-dourado.png" alt="Gislaine Neuberger, Podóloga">
       <a class="brand-ig" href="https://www.instagram.com/podologagislaineuberger/" target="_blank" rel="noopener" data-gtm="link_instagram" aria-label="Instagram @podologagislaineuberger">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
         <span>@podologagislaineuberger</span>
