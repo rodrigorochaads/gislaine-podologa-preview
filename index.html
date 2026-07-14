@@ -127,6 +127,24 @@
   }
   .frame svg { width: 30px; height: 30px; stroke: var(--sage-deep); opacity: 0.7; }
   .frame-label { font-size: 12px; color: var(--sage-deep); text-align: center; padding: 0 1.2rem; line-height: 1.5; }
+  .frame small { display: block; font-weight: 600; color: var(--sage-deep); opacity: 1; margin-bottom: 2px; }
+
+  .photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+  @media (max-width: 760px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
+  .photo-grid .frame { aspect-ratio: 1; border-radius: 14px; }
+  .photo-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+  @media (max-width: 560px) { .photo-grid-2 { grid-template-columns: 1fr; } }
+  .photo-grid-2 .frame { aspect-ratio: 4/3; border-radius: 14px; }
+  .doc-badge {
+    display: flex; align-items: center; gap: 12px;
+    background: var(--paper-raised); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1rem 1.25rem;
+  }
+  .doc-badge .frame { width: 56px; height: 56px; flex-shrink: 0; border-radius: 10px; aspect-ratio: auto; }
+  .doc-badge .frame svg { width: 22px; height: 22px; }
+  .doc-badge-text p { margin: 0; }
+  .doc-badge-text .frame-label-inline { font-size: 13.5px; font-weight: 600; color: var(--ink); }
+  .doc-badge-text .frame-label-sub { font-size: 12.5px; color: var(--ink-soft); }
 
   section { padding: 3rem clamp(1rem, 4vw, 2.5rem); }
   .section-head { max-width: 60ch; margin: 0 0 2rem; }
@@ -238,7 +256,7 @@
 
   <header>
     <div class="brand">
-      <img class="brand-logo-img" src="logo-sage.png" alt="Gislaine Neuberger, Podóloga">
+      <img class="brand-logo-img" src="logo-preto.png" alt="Gislaine Neuberger, Podóloga">
       <a class="brand-ig" href="https://www.instagram.com/podologagislaineuberger/" target="_blank" rel="noopener" data-gtm="link_instagram" aria-label="Instagram @podologagislaineuberger">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
         <span>@podologagislaineuberger</span>
@@ -308,6 +326,90 @@
         <span class="chip">Onicogrifose</span>
       </div>
       <p class="mico-note">Exame micológico coletado na própria clínica, para um resultado eficaz e sem reincidência.</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">Casos que cuidamos</p>
+        <h2>Exemplos reais de cada tratamento</h2>
+        <p class="section-sub">Uma foto de cada caso ajuda quem está pesquisando a se identificar com o problema.</p>
+      </div>
+      <div class="photo-grid">
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Unha encravada</small>foto de um caso real</p>
+        </div>
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Calo</small>foto de um caso real</p>
+        </div>
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Rachadura</small>foto de um caso real</p>
+        </div>
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Fungo/micose</small>foto de um caso real</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">Conheça o espaço</p>
+        <h2>Onde o atendimento acontece</h2>
+      </div>
+      <div class="photo-grid-2">
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Sala de atendimento</small>ambiente limpo e organizado</p>
+        </div>
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Fachada</small>entrada em Meia Praia, Itapema</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">Resultados</p>
+        <h2>Antes e depois</h2>
+        <p class="section-sub">Usado só com autorização por escrito da paciente (já cobre isso na ficha de anamnese), sem mostrar rosto.</p>
+      </div>
+      <div class="photo-grid-2">
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Antes</small>caso real, sem identificação</p>
+        </div>
+        <div class="frame">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          <p class="frame-label"><small>Depois</small>mesmo caso, resultado</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <p class="eyebrow">Documentação</p>
+        <h2>Credenciais e legalidade</h2>
+      </div>
+      <div class="photo-grid-2">
+        <div class="doc-badge">
+          <div class="frame"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 15l4-4 4 4 4-6 4 5"/></svg></div>
+          <div class="doc-badge-text">
+            <p class="frame-label-inline">Diploma / certificado</p>
+            <p class="frame-label-sub">Formada em podologia, cursos e especializações</p>
+          </div>
+        </div>
+        <div class="doc-badge">
+          <div class="frame"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 15l4-4 4 4 4-6 4 5"/></svg></div>
+          <div class="doc-badge-text">
+            <p class="frame-label-inline">Alvará sanitário</p>
+            <p class="frame-label-sub">Comprova que a clínica está regularizada</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
