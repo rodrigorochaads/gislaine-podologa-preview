@@ -136,6 +136,9 @@
   .photo-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
   @media (max-width: 560px) { .photo-grid-2 { grid-template-columns: 1fr; } }
   .photo-grid-2 .frame { aspect-ratio: 4/3; border-radius: 14px; }
+  .photo-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  @media (max-width: 700px) { .photo-grid-3 { grid-template-columns: 1fr; } }
+  .photo-grid-3 .frame { aspect-ratio: 4/3; border-radius: 14px; }
   .doc-badge {
     display: flex; align-items: center; gap: 12px;
     background: var(--paper-raised); border: 1px solid var(--border); border-radius: 12px;
@@ -337,13 +340,11 @@
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
           <p class="frame-label"><small>Unha encravada</small>foto de um caso real</p>
         </div>
-        <div class="frame">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
-          <p class="frame-label"><small>Calo</small>foto de um caso real</p>
+        <div class="frame" style="padding: 0; overflow: hidden;">
+          <img src="exemplo-calo.jpeg" alt="Calo antes do tratamento" class="real-photo">
         </div>
-        <div class="frame">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
-          <p class="frame-label"><small>Rachadura</small>foto de um caso real</p>
+        <div class="frame" style="padding: 0; overflow: hidden;">
+          <img src="caso-calcanhar-antes.jpeg" alt="Calcanhar rachado antes do tratamento" class="real-photo">
         </div>
         <div class="frame">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
@@ -375,7 +376,10 @@
         <h2>Casos tratados</h2>
         <p class="section-sub">Resultado real com autorização da paciente (já coberto pela ficha de anamnese), sem mostrar rosto. Resultados individuais podem variar.</p>
       </div>
-      <div class="photo-grid-2">
+      <div class="photo-grid-3">
+        <div class="frame" style="padding: 0; overflow: hidden;">
+          <img src="caso-unha-encravada.jpeg" alt="Caso real de unha encravada tratada, antes e depois" class="real-photo">
+        </div>
         <div class="frame" style="padding: 0; overflow: hidden;">
           <img src="caso-calo.jpeg" alt="Caso real de calo tratado, antes e depois" class="real-photo">
         </div>
