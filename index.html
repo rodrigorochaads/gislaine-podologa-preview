@@ -146,6 +146,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .photo-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
   @media (max-width: 700px) { .photo-grid-3 { grid-template-columns: 1fr; } }
   .photo-grid-3 .frame { aspect-ratio: 4/3; border-radius: 14px; }
+  .photo-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; }
+  @media (max-width: 760px) { .photo-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+  .photo-grid-4 .frame { aspect-ratio: 4/3; border-radius: 14px; }
   .doc-badge {
     display: flex; align-items: center; gap: 12px;
     background: var(--paper-raised); border: 1px solid var(--border); border-radius: 12px;
@@ -389,7 +392,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h2>Casos tratados</h2>
         <p class="section-sub">Resultado real com autorização da paciente (já coberto pela ficha de anamnese), sem mostrar rosto. Resultados individuais podem variar.</p>
       </div>
-      <div class="photo-grid-3">
+      <div class="photo-grid-4">
+        <div class="frame" style="padding: 0; overflow: hidden;">
+          <img src="caso-unha-encravada.jpeg" alt="Caso real de unha encravada tratada, antes e depois" class="real-photo">
+        </div>
         <div class="frame" style="padding: 0; overflow: hidden; display: flex; flex-direction: row;">
           <img src="caso-fungo-micose-antes.jpeg" alt="Unha com fungo, antes do tratamento" class="real-photo" style="width: 50%;">
           <img src="caso-fungo-micose.jpeg" alt="Unha após tratamento de fungo" class="real-photo" style="width: 50%;">
