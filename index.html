@@ -554,6 +554,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       btn.addEventListener('click', function () {
         var nome = (document.getElementById('lpName').value || '').trim();
         var sintoma = (document.getElementById('lpPain').value || '').trim();
+        var telefoneDigits = (document.getElementById('lpWhats').value || '').replace(/\D/g, '');
+
+        if (telefoneDigits.length >= 10) {
+          var telefoneE164 = telefoneDigits.charAt(0) === '5' && telefoneDigits.charAt(1) === '5'
+            ? '+' + telefoneDigits
+            : '+55' + telefoneDigits;
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'user_data_lead',
+            'user_data': { 'phone_number': telefoneE164 }
+          });
+        }
+
         var msg = 'Olá! ';
         msg += nome ? 'Meu nome é ' + nome + '. ' : '';
         msg += 'Vim pelo Google e gostaria de agendar uma avaliação';
